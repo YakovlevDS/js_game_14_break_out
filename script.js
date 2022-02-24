@@ -5,14 +5,14 @@ const h = canvas.height
 
 let score = 0
 
-const brickRows = 9
-const brickCols = 5
+const brickRows = 12
+const brickCols = 7
 
 const ball = {
   x: w / 2,
   y: h / 2,
-  size: 10,
-  speed: 4,
+  size: 20,
+  speed: 3,
   dx: 4,
   dy: -4
 }
@@ -20,7 +20,7 @@ const ball = {
 const paddle = {
   x: w / 2 - 40,
   y: h - 30,
-  w: 75,
+  w: 100,
   h: 15,
   speed: 8,
   dx: 0
@@ -28,7 +28,7 @@ const paddle = {
 
 const brick = {
   w: 70,
-  h: 20,
+  h: 30,
   padding: 10,
   offsetX: 45,
   offsetY: 60,
@@ -66,8 +66,9 @@ function drawPaddle() {
 }
 
 function drawScore() {
-  $.font = '20px Helvetica'
-  $.fillText(`Score: ${score}`, w - 100, 30)
+  $.font = '28px  Helvetica'
+  
+  $.fillText(`Score: ${score}`, w/2-30, 40)
 }
 
 function drawBricks() {

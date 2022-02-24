@@ -5,10 +5,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #0095dd;
+  background: #024412;
 }
 
 canvas {
-  background: #f0f0f0;
+  background: #abe77a;
   border-radius: 5px;
 }
